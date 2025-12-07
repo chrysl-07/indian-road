@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Behavior Library</title>
+    <link rel="stylesheet" href="behavior.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">Call Center Manager Dashboard</h1>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="assetmanager.html">Asset Manager</a></li>
+            <li><a href="behavior.html" class="active">Behavior Library</a></li>
+        </ul>
+    </nav>
+
+    <section class="container">
+        <h2>Behavior Library</h2>
+
+        <div class="behavior-form">
+            <h3>Add New Behavior</h3>
+            <input type="text" id="behaviorName" placeholder="Behavior Name (e.g., Calm Tone, Quick Resolution)" />
+            <textarea id="behaviorDesc" placeholder="Behavior Description"></textarea>
+            <button id="addBehavior">Add Behavior</button>
+        </div>
+
+        <h3 class="list-title">Saved Behaviors</h3>
+        <div id="behaviorList" class="behavior-list">
+            <!-- JS will inject cards here -->
+        </div>
+    </section>
+
+    <script src="behavior.js"></script>
+</body>
+</html>
