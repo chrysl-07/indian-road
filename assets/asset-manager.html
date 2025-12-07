@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asset Manager</title>
+  <link rel="stylesheet" href="asset-manager.css" />
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <h1 class="title">Asset Library</h1>
+    <p class="subtitle">Manage roads, intersections, and objects</p>
+  </header>
+
+  <!-- MAIN SECTION -->
+  <div class="container">
+
+    <!-- LEFT PANEL: ASSET LIST -->
+    <aside class="asset-list">
+      <h2>Assets</h2>
+
+      <div id="assetItems"></div>
+    </aside>
+
+    <!-- RIGHT PANEL: ASSET DETAILS -->
+    <main class="asset-details">
+      <h2>Asset Preview</h2>
+
+      <div id="previewArea" class="preview-box">
+        <p>Select an asset from the left list.</p>
+      </div>
+
+      <div id="parametersPanel" class="parameters hidden">
+        <h3>Parameters</h3>
+        <div id="parametersContent"></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="asset-manager.js"></script>
+</body>
+</html>
