@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Road Modeler</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo-circle">📍</div>
+            <div class="logo-text">
+                <h2>Indian Road Modeler</h2>
+                <p>SUMO Traffic Simulation</p>
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="asset-manager.html">Asset Library</a>
+            <a href="behaviors.html">Behaviors</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <h1>Indian Road Modeler</h1>
+        <p>High-Fidelity Digital Twin Creator for MATLAB & RoadRunner</p>
+
+        <span class="desc">
+            Accelerate traffic simulation by modeling realistic Indian road conditions—
+            potholes, barricades, street vendors, and hyper-local driving behaviors—
+            with one-click export to SUMO open-source traffic simulator.
+        </span>
+    </header>
+
+    <!-- STATS SECTION -->
+    <section class="stats">
+        <div class="stat-card">
+            <span class="label">TOTAL PROJECTS</span>
+            <h2 id="total-projects">0</h2>
+        </div>
+
+        <div class="stat-card">
+            <span class="label">IN PROGRESS</span>
+            <h2 id="in-progress">0</h2>
+        </div>
+
+        <div class="stat-card">
+            <span class="label">EXPORTED TO SUMO</span>
+            <h2 id="exported">0</h2>
+        </div>
+    </section>
+
+    <!-- SEARCH BAR -->
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Search projects by name or city...">
+    </div>
+
+    <!-- PROJECT GRID -->
+    <section class="projects" id="project-list">
+
+        <!-- PROJECT CARD 1 -->
+        <div class="project-card" data-status="inprogress">
+            <div class="status inprogress">in progress</div>
+            <div class="project-icon">📦</div>
+
+            <h3>Silk Board Junction</h3>
+            <p>High-traffic 4-way junction in Bangalore with complex signal patterns.</p>
+
+            <div class="details">
+                <span>Bangalore</span>
+                <span> 4-Way Junction</span>
+            </div>
+
+            <button class="open-btn">Open Scenario Builder →</button>
+        </div>
+
+        <!-- PROJECT CARD 2 -->
+        <div class="project-card" data-status="draft">
+            <div class="status draft">draft</div>
+            <div class="project-icon">📦</div>
+
+            <h3>Mumbai CST Roundabout</h3>
+            <p>Historic roundabout with mixed traffic including buses and pedestrians.</p>
+
+            <div class="details">
+                <span>Mumbai</span>
+                <span>Roundabout</span>
+            </div>
+
+            <button class="open-btn">Open Scenario Builder →</button>
+        </div>
+
+        <!-- PROJECT CARD 3 -->
+        <div class="project-card" data-status="exported">
+            <div class="status exported">exported</div>
+            <div class="project-icon">📦</div>
+
+            <h3>Delhi Connaught Place Circle</h3>
+            <p>Multi-lane circular road with frequent lane changes and vendor obstructions.</p>
+
+            <div class="details">
+                <span>Delhi</span>
+                <span>Roundabout</span>
+            </div>
+
+            <button class="open-btn">Open Scenario Builder →</button>
+        </div>
+
+    </section>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
